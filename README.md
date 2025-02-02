@@ -39,5 +39,5 @@ That Mobile-first workflow is REALLY not for me.
 
 ## Author
 
-- Website - [Add your name here](https://github.com/hyperbanner)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/HyperBanner)
+- Website - [My Github](https://github.com/hyperbanner)
+- Frontend Mentor - [@HyperBanner](https://www.frontendmentor.io/profile/HyperBanner)
