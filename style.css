@@ -14,14 +14,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: hsl(30, 38%, 92%);
 }
 
-img {
+.mobile {
+  display: initial;
   max-inline-size: 100%;
   block-size: auto;
   border-radius: 0.5em 0.5em 0 0;
+}
+
+.desktop {
+  display: none;
 }
 
 .card {
@@ -29,9 +35,8 @@ img {
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
   margin-top: auto;
-  max-width: 90vw;
-  min-height: 90vh;
-  min-height: 70vh;
+  width: 350px;
+  max-height: 90vh;
   border-radius: 0.5em;
 }
 
@@ -91,6 +96,11 @@ img {
   border-radius: 0.5em;
 }
 
+.purchase:hover {
+  background-color: hsl(158, 36%, 20%);
+  cursor: pointer;
+}
+
 .purchase_inside {
   display: flex;
   justify-content: center;
@@ -100,4 +110,34 @@ img {
 
 .attribution {
   margin-top: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: initial;
+    max-width: 50%;
+    height: 50vh;
+    background-image: url("./images/image-product-desktop.jpg");
+    border-radius: 0.5em;
+  }
+
+ .card {
+    flex-direction: row;
+    width: 37rem;
+    max-height: 100rem;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    font-size: 110%;
+    max-height: 50vh;
+    justify-content: space-evenly;
+  }
 }
